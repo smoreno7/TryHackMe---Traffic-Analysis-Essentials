@@ -3,7 +3,7 @@
 Network Traffic Analysis (NTA) is a fundamental security and operational methodology used to intercept, monitor, and analyze communication patterns to ensure system health and detect potential threats. By leveraging both Flow Analysis for high-level statistical summaries and Packet Analysis for Deep Packet Inspection (DPI), NTA provides the necessary visibility to identify the root causes of network anomalies. Ultimately, this practice allows organizations to establish comprehensive baselines for asset tracking and enhances their ability to detect and respond to malicious activities, ensuring both the security and performance of the network infrastructure.
 
 ## Finding the Flags:
-
+now, continuing the laboratory, we accessed the traffic analysis simulator to locate the required flags. By utilizing the IDS/IPS control panel, we were able to effectively filter out background noise and concentrate on specific events that triggered attack signatures or policy violations.
 ## Flag 1:
 ### Step 1: Traffic Analysis
 When the simulation starts, packet traffic begins and we detect two IPs that generate malicious traffic (represented by red):
@@ -29,4 +29,4 @@ After applying the filters to the ports mentioned above, we get the second flag:
 <img width="476" height="371" alt="{F3E1C692-A268-4890-A941-F4F4E3F206D6}" src="https://github.com/user-attachments/assets/f8d3bc54-775b-4980-8ec1-5031facf7782" />
 
 ## Conclusions:
-This laboratory highlighted the importance of correlating traffic logs with IDS/IPS alerts to identify network threats. By detecting malicious activity on non-standard ports specifically 4444 for Metasploit, 7777 for C2 traffic and 2222 for SSH masquerading, we were able to isolate IP 10.10.99.62. Implementing these filters successfully mitigated the attack and led to capturing the first flag. This exercise proves that deep packet inspection and port analysis are vital for effective incident response and network defense.
+This simulator highlighted the importance of correlating traffic logs with IDS/IPS alerts to identify network threats. By detecting malicious activity on non-standard ports specifically 4444 for Metasploit, 7777 for C2 traffic and 2222 for SSH masquerading, we were able to isolate IP 10.10.99.62. Implementing these filters successfully mitigated the attack and led to capturing the first flag. This exercise proves that deep packet inspection and port analysis are vital for effective incident response and network defense.
